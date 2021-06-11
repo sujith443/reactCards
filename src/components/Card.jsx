@@ -5,9 +5,12 @@ function Card(props) {
   return (
     <div className="card">
       <div className="top">
+        <p>{props.key}</p>
         <h2 className="name">{props.name}</h2>
+        <Details tel={props.smart} />
         <Avatar img={props.img} />
       </div>
+
       <div className="bottom">
         <Details tel={props.tel} />
         <Details tel={props.email} />
